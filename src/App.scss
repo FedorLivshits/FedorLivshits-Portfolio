@@ -393,6 +393,9 @@ body {
     &__item span {
       font-size: 12px;
     }
+    &__item:last-child{
+      display: none;
+    }
   }
   .experience {
     padding: 50px 0;
