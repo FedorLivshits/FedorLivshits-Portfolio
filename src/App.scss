@@ -1,0 +1,408 @@
+body {
+  font-family: 'Heebo', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.5px;
+  color: #1c1c1c;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: 886px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  &__container {
+    max-width: 1062px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  &__inner {
+    padding: 27px 0;
+  }
+
+  &__burger {
+    display: none;
+  }
+
+  &__menu-list {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__menu-item {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    margin-left: 33px;
+  }
+
+  &__menu-link {
+    color: black;
+
+    &:hover {
+      color: red;
+    }
+  }
+}
+
+.top {
+  min-height: 100vh;
+
+  &__inner {
+    padding-top: 200px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  &__info {
+    padding-top: 18px;
+    margin-right: 40px;
+  }
+
+  &__title {
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 700;
+    max-width: 506px;
+    padding-bottom: 30px;
+  }
+
+  &__text {
+    max-width: 497px;
+    margin-bottom: 30px;
+
+    p {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__button {
+    padding: 9px 21px 9px 20px;
+    background: red;
+    font-size: 20px;
+    line-height: 30px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  &__image-wrapper {
+    max-width: 243px;
+    max-height: 243px;
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  &__image {
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+  }
+}
+
+.skills {
+  padding-bottom: 60px;
+  background: #1c1c1c;
+  color: white;
+
+  &__title {
+    padding: 30px 0;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 60px;
+  }
+
+  &__inner {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+
+  &__item {
+    text-align: center;
+    font-weight: 600;
+    width: 70px;
+  }
+}
+
+.experience {
+  padding: 100px 0;
+
+  &__title {
+    font-weight: 600;
+    font-size: 26px;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 40vw;
+    margin-left: auto;
+    border-left: 2px solid red;
+  }
+
+  &__item {
+    margin-bottom: 60px;
+    padding-left: 40px;
+    position: relative;
+
+    &:not(:last-child):before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -7px;
+      background: red;
+      height: 12px;
+      width: 12px;
+      border-radius: 50%;
+    }
+  }
+
+  &__item:last-child {
+    margin-bottom: 0;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 11px;
+      left: -7px;
+      background: red;
+      height: 12px;
+      width: 12px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.works {
+  padding-bottom: 30px;
+  background: #1c1c1c;
+  color: #ffffff;
+
+  &__title {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 60px;
+    padding: 30px 0;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 18px;
+    padding-bottom: 15px;
+    margin-bottom: 31px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      max-width: 858px;
+      height: 1px;
+      background: #E0E0E0;
+    }
+  }
+
+  &__item-img {
+    width: 100%;
+  }
+
+  &__content-link {
+    color: inherit;
+  }
+
+  &__content-title {
+    font-size: 23px;
+    line-height: 44px;
+  }
+
+  &__content-info {
+    padding-bottom: 17px;
+  }
+
+  &__text {
+    padding-bottom: 15px;
+  }
+
+  &__date {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 60px;
+    color: white;
+    background: red;
+    padding: 3px 9px;
+    border-radius: 16px;
+    margin-right: 26px;
+  }
+
+  &__theme {
+    color: grey;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  &__item-btns {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+  }
+
+  &__item-btn {
+    padding: 8px 20px;
+    background: #142850;
+    cursor: pointer;
+    text-align: center;
+    font-size: 13px;
+  }
+}
+
+.footer {
+  padding: 30px 0;
+
+  &__text {
+    line-height: 21px;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .header__menu {
+    &-list {
+      justify-content: center;
+      font-size: 18px;
+    }
+
+    &-link:first-child {
+      margin-left: 0;
+    }
+
+    &-item {
+      font-size: 16px;
+      position: relative;
+      left: -11px;
+    }
+  }
+  .top {
+    &__inner {
+      padding-top: 115px;
+      margin-bottom: 70px;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    &__info {
+      padding-top: 33px;
+      text-align: center;
+      margin-right: 0;
+    }
+
+    &__image {
+      width: 170px;
+      height: 170px;
+    }
+
+    &__title {
+      padding-bottom: 0;
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    &__text {
+      padding: 21px 15px 27px;
+      margin-bottom: 0;
+    }
+  }
+  .skills {
+    &__item span {
+      font-size: 14px;
+    }
+
+    &__item {
+      width: 50px;
+    }
+  }
+  .experience {
+    &__items {
+      min-width: 60vw;
+    }
+  }
+  .works {
+    &__item {
+      grid-template-columns: 1fr;
+    }
+
+    &__item-btns {
+      grid-template-columns: 1fr;
+    }
+
+    &__theme {
+      font-size: 14px;
+    }
+
+    &__text p {
+      font-size: 14px;
+      padding-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .skills {
+    &__inner {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__item span {
+      font-size: 12px;
+    }
+  }
+  .experience {
+    padding: 50px 0;
+
+    &__items {
+      max-width: 100vw;
+    }
+
+    &__title {
+      padding-bottom: 30px;
+    }
+  }
+}
