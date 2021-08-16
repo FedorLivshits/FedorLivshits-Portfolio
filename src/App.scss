@@ -63,7 +63,7 @@ body {
     color: black;
 
     &:hover {
-      color: red;
+      color: #e30202;
     }
   }
 }
@@ -103,7 +103,7 @@ body {
 
   &__button {
     padding: 9px 21px 9px 20px;
-    background: red;
+    background: #e30202;
     font-size: 20px;
     line-height: 30px;
     border: none;
@@ -111,6 +111,9 @@ body {
     font-weight: 500;
     border-radius: 2px;
     cursor: pointer;
+    &:hover{
+      background: #cd0101;
+    }
   }
 
   &__image-wrapper {
@@ -153,6 +156,15 @@ body {
     font-weight: 600;
     width: 70px;
   }
+  &__item span {
+    font-size: 12px;
+  }
+  .rest-api span,
+  .material-ui span{
+    width: 62px;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .experience {
@@ -169,7 +181,7 @@ body {
     justify-content: flex-end;
     max-width: 40vw;
     margin-left: auto;
-    border-left: 2px solid red;
+    border-left: 2px solid #e30202;
   }
 
   &__item {
@@ -182,7 +194,7 @@ body {
       position: absolute;
       top: 0;
       left: -7px;
-      background: red;
+      background: #e30202;
       height: 12px;
       width: 12px;
       border-radius: 50%;
@@ -195,9 +207,9 @@ body {
     &:before {
       content: '';
       position: absolute;
-      top: 11px;
+      top: 12px;
       left: -7px;
-      background: red;
+      background: #e30202;
       height: 12px;
       width: 12px;
       border-radius: 50%;
@@ -251,28 +263,29 @@ body {
   }
 
   &__content-info {
+    display: flex;
+    align-items: flex-start;
     padding-bottom: 17px;
   }
 
   &__text {
-    padding-bottom: 15px;
+    padding-bottom: 30px;
   }
 
   &__date {
     font-weight: 600;
     font-size: 14px;
-    line-height: 60px;
     color: white;
-    background: red;
+    background: #e30202;
     padding: 3px 9px;
     border-radius: 16px;
-    margin-right: 26px;
+    margin-right: 15px;
   }
 
   &__theme {
     color: grey;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 24px;
   }
 
   &__item-btns {
@@ -288,6 +301,9 @@ body {
     cursor: pointer;
     text-align: center;
     font-size: 13px;
+    &:hover{
+      background: #112243;
+    }
   }
 }
 
@@ -300,12 +316,17 @@ body {
     text-align: center;
   }
 }
-
+@media (max-width: 1000px) {
+  .experience{
+    &__items{
+      max-width: 50vw;
+    }
+  }
+}
 
 @media (max-width: 767px) {
   .header__menu {
     &-list {
-      justify-content: center;
       font-size: 18px;
     }
 
@@ -351,10 +372,6 @@ body {
     }
   }
   .skills {
-    &__item span {
-      font-size: 14px;
-    }
-
     &__item {
       width: 50px;
     }
@@ -379,7 +396,6 @@ body {
 
     &__text p {
       font-size: 14px;
-      padding-bottom: 30px;
     }
   }
 }
@@ -390,9 +406,6 @@ body {
       grid-template-columns: repeat(3, 1fr);
     }
 
-    &__item span {
-      font-size: 12px;
-    }
     &__item:last-child{
       display: none;
     }

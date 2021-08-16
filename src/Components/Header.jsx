@@ -17,9 +17,6 @@ const Header = () => {
                                 <a className="header__menu-link" href="https://github.com/FedorLivshits">GitHub</a>
                             </li>
                             <li className="header__menu-item">
-                                <a className="header__menu-link" href="#">Headhunter</a>
-                            </li>
-                            <li className="header__menu-item">
                                 <a className="header__menu-link" href="#works-section">Портфолио</a>
                             </li>
                         </ul>

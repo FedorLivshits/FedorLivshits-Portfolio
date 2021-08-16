@@ -39,7 +39,7 @@ const TopSection = () => {
                                            x: 0,
                                            transition: {delay: 0.6, duration: 0.8},
                                        }}>
-                            Скачать резюме
+                           Перейти к HeadHunter
                         </motion.button>
                     </div>
                     <motion.div className='top__image-wrapper'

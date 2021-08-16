@@ -56,11 +56,11 @@ const Skills = () => {
                             <span>GIT</span>
 
                         </div>
-                        <div className='skills__item'>
+                        <div className='skills__item rest-api'>
                             <img src={restLogo} alt='' className='skills__logo'/>
                             <span>REST-Api</span>
                         </div>
-                        <div className='skills__item'>
+                        <div className='skills__item material-ui'>
                             <img src={materialLogo} alt='' className='skills__logo'/>
                             <span>Material-UI</span>
                         </div>
