@@ -21,9 +21,7 @@ const ProjectCard = ({title, tech, appImage, date, text, webSiteLink, githubLink
                     </span>
                 </div>
                 <div className="works__text">
-                    <p>
                         {text}
-                    </p>
                 </div>
                 <div className='works__item-btns'>
                     <a className="works__item-btn" href={webSiteLink}>Перейти на сайт</a>

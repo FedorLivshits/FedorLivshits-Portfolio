@@ -307,15 +307,36 @@ body {
   }
 }
 
+
 .footer {
-  padding: 30px 0;
+  &__inner {
+    padding: 51px 0 58px;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__link {
+    margin-right: 35px;
+    padding-bottom: 26px;
+    & img{
+      width: 30px;
+    }
+  }
+
+  &__link:nth-child(4) {
+    margin-right: 0;
+  }
 
   &__text {
+    font-size: 12px;
     line-height: 21px;
-    font-size: 14px;
     text-align: center;
   }
 }
+
 @media (max-width: 1000px) {
   .experience{
     &__items{

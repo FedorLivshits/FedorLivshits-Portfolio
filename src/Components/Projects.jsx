@@ -24,32 +24,70 @@ const Projects = () => {
                 <div className='works__items'>
                     <ProjectCard title={'Приложение MovieApp'} appImage={movieMain}
                                  tech={'React/Redux, JavaScript, SCSS, React-Bootstrap'} date={2021}
-                                 text={'В этом приложении я использовал открытое API TMDB. Реализован роутинг, постраничная пагинация, запросы к api из поисковых строк. Реализован посимвольный запрос к базе данных в шапке сайта, отдельные GET-запросы(фильмы по категориям, детали конкретного фильма, информация об актерах), использованы хуки (useState, useEffect). Для связи с Redux использован HOC Connect, предоставляемый библиотекой react-redux. Реализовано сохранение понравившихся фильмов в localStorage браузера. Приложение адаптивное, сделан акцент на удобство мобильной версии, для анимаций использована библиотека framer-motion'}
-                                 webSiteLink={'https://movie-app-react-redux.vercel.app/'}
+                                 text={<p> - Данное приложение использует открытое api TMDB. <br/> - Реализован роутинг,
+                                     постраничная пагинация, запросы к api из поисковых строк. Реализован посимвольный
+                                     запрос к базе данных в шапке сайта, отдельные GET-запросы(фильмы по категориям,
+                                     детали конкретного фильма, информация об актерах).<br/> - Все компоненты проекта
+                                     функциональные и для локального состояния используют хуки. Для связи с Redux
+                                     использован HOC Connect.<br/> - Реализовано сохранение понравившихся фильмов в
+                                     localStorage браузера.<br/> - Приложение адаптивное, сделан акцент на удобство
+                                     мобильной версии, для анимаций использована библиотека framer-motion</p>}
+                                 webSiteLink={'https://movie-app-react-redux.vercel.app'}
                                  githubLink={'https://github.com/FedorLivshits/MovieApp-React-Redux'}/>
                     <ProjectCard title={'Онлайн-магазин Everpress'} appImage={shopMain}
                                  tech={'React/Redux, TypeScript, Styled-Components'} date={2021}
-                                 text={'Данное приложение написано на TypeScript, для стилизации выбрана библиотека styled-components. Реализован роутинг, порционная выдача товара по кнопке, взаимодействие с избранным и корзиной. Использованы хуки (useState, useEffect). Для связи с Redux использованы хуки useSelector и useDispatch, предоставляемые библиотекой react-redux. Реализована валидация формы оформления заказа при помощи библиотеки formic. Реализовано сохранение товара в избранном и товара в корзине в localStorage браузера. Приложение адаптивное, сделан акцент на удобство мобильной версии, для анимаций использована библиотека framer-motion'}
-                                 webSiteLink={'https://designer-clothing-shop-react.vercel.app/'}
+                                 text={<p> - Приложение написано на TypeScript, для стилизации использована библиотека
+                                     Styled-Components.<br/>
+                                     - Реализован роутинг, дозагрузка товара по кнопке, взаимодействие с избранным и
+                                     корзиной, оформление товара. <br/>
+                                     - Для локального состояния компонент используются хуки useState, useEffect. Для
+                                     связи с
+                                     Redux использованы хуки useSelector и useDispatch.<br/>
+                                     - Реализована валидация формы оформления заказа при помощи библиотеки formic.<br/>
+                                     - Реализовано сохранение товара в избранном и товара в корзине в localStorage
+                                     браузера.<br/>
+                                     - Приложение адаптивное, сделан акцент на удобство мобильной версии, для анимаций
+                                     использована библиотека framer-motion</p>}
+                                 webSiteLink={'https://designer-clothing-shop-react.vercel.app'}
                                  githubLink={'https://github.com/FedorLivshits/DesignerClothingShopReact'}/>
                     <ProjectCard title={'Социальная сеть'} appImage={networkMain}
                                  tech={'React/Redux, TypeScript, SCSS, React-Bootstrap'} date={2020}
-                                 text={'Данное приложение написано на TypeScript, для стилизации использован препроцессор SCSS и библиотека react-bootstrap. Реализована, аутентификация пользователя, постраничная пагинация юзеров, "бесконечная лента" постов, возможность обновлять фотографию профиля, статус, редактировать информацию о себе, добавлять пользователей в друзья и понравившиеся посты в сохранненное. Для локального состояния используются хуки, для связи с Redux использованы useSelector и useDispatch, предоставляемые библиотекой react-redux. Реализована валидация формы логинизации при помощи библиотеки formic. Приложение адаптивное, сделан акцент на удобство мобильной версии, для анимаций использована библиотека framer-motion'}
-                                 webSiteLink={'https://social-network-app-flame.vercel.app/login'}
+                                 text={<p>- Приложение написано на TypeScript, для стилизации использован препроцессор
+                                     SCSS и библиотека react-bootstrap.<br/>
+                                     - Реализована аутентификация пользователя, постраничная пагинация юзеров,
+                                     "бесконечная лента" постов, возможность обновлять фотографию профиля, статус,
+                                     редактировать информацию о себе, писать свои посты, добавлять пользователей в
+                                     друзья и понравившиеся записи в сохранненное (localStorage).<br/>
+                                     - Для локального состояния используются хуки, для связи с Redux использованы
+                                     useSelector и useDispatch.<br/>
+                                     - Реализована валидация формы логинизации при помощи библиотеки formic.<br/>
+                                     - Приложение адаптивное, сделан акцент на удобство мобильной версии.<br/>
+                                     - Для анимаций использована библиотека framer-motion.</p>}
+                                 webSiteLink={'https://social-network-app-flame.vercel.app'}
                                  githubLink={'https://github.com/FedorLivshits/Social-Network'}/>
                     <ProjectCard title={'Погода с запросом геолокации'} appImage={weatherMain}
                                  tech={'React/Redux, JavaScript, Module-CSS'} date={2021}
-                                 text={'Взаимодействие с открытым api openWeatherMap. Добавлен кастомный хук для определения местоположения, для стилизации выбраны css модули. Сделана адаптивная версия.'}
-                                 webSiteLink={'https://weather-app-react-dusky.vercel.app/'}
+                                 text={<p>- Взаимодействие с открытым api openWeatherMap.<br/>
+                                     - Все компоненты проекта функциональные, используются хуки.<br/>
+                                     - Добавлен кастомный хук для определения местоположения.<br/>
+                                     - Для стилизации выбраны css модули.<br/>
+                                     - Сделана адаптивная версия.</p>}
+                                 webSiteLink={'https://weather-app-react-dusky.vercel.app'}
                                  githubLink={'https://github.com/FedorLivshits/Weather-App-React'}/>
                     <ProjectCard title={'Калькулятор с двумя темами'} appImage={calculatorMain}
                                  tech={'React, React-Hooks, TypeScript'} date={2021}
-                                 text={'Простое приложение, написанное на TypeSctipt. В качестве хранения состояния использована система хуков из useState и useContext. Добавлена возможность переключать светлую/темную темы.'}
-                                 webSiteLink={'#'}
+                                 text={<p>- Классическое приложение, написанное на TypeSctipt.<br/>
+                                     - Используются useState и useContext.<br/>
+                                     - Добавлена возможность переключать светлую/темную темы.</p>}
+                                 webSiteLink={'https://react-calculator-ts.vercel.app'}
                                  githubLink={'https://github.com/FedorLivshits/React-CalculatorTS'}/>
                     <ProjectCard title={'Верстка с макета'} appImage={furnitureMain}
                                  tech={'Html/CSS, Gulp, VanillaJS, JQuery'} date={2021}
-                                 text={'Пример верстки многостраничного сайта на препроцессоре SCSS по макету Figma с соблюдением методологии БЭМ. Для сборки используется Gulp. Включены интерактивные элементы как на чистом JavaScript, так и на JQuery.'}
+                                 text={<p>- Для стилизации использован препроцессор SCSS.<br/>
+                                     - Соблюдена методология БЭМ.<br/>
+                                     - Для сборки используется Gulp.<br/>
+                                     - Включены интерактивные элементы (слайдер, выпадающее меню, галерея фотографий)
+                                     как на чистом JavaScript, так и на JQuery.</p>}
                                  webSiteLink={'http://s93130ya.beget.tech/index.html'}
                                  githubLink={'https://github.com/FedorLivshits/MultipageWebsite-gulp-scss'}/>
                 </div>
