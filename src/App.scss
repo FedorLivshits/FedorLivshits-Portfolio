@@ -111,7 +111,7 @@ body {
     font-weight: 500;
     border-radius: 2px;
     cursor: pointer;
-    &:hover{
+    &:hover {
       background: #cd0101;
     }
   }
@@ -160,7 +160,7 @@ body {
     font-size: 12px;
   }
   .rest-api span,
-  .material-ui span{
+  .material-ui span {
     width: 62px;
     display: block;
     margin: 0 auto;
@@ -245,7 +245,7 @@ body {
       right: 0;
       max-width: 858px;
       height: 1px;
-      background: #E0E0E0;
+      background: #e0e0e0;
     }
   }
 
@@ -301,12 +301,11 @@ body {
     cursor: pointer;
     text-align: center;
     font-size: 13px;
-    &:hover{
+    &:hover {
       background: #112243;
     }
   }
 }
-
 
 .footer {
   &__inner {
@@ -321,7 +320,7 @@ body {
   &__link {
     margin-right: 35px;
     padding-bottom: 26px;
-    & img{
+    & img {
       width: 30px;
     }
   }
@@ -338,8 +337,8 @@ body {
 }
 
 @media (max-width: 1000px) {
-  .experience{
-    &__items{
+  .experience {
+    &__items {
       max-width: 50vw;
     }
   }
@@ -427,7 +426,7 @@ body {
       grid-template-columns: repeat(3, 1fr);
     }
 
-    &__item:last-child{
+    &__item:last-child {
       display: none;
     }
   }
